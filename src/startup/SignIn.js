@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 import {StyleSheet, Dimensions, Image, View} from 'react-native';
-import { Container, Text, Header, Left, Title, Content, Right, Form, Item, Input, Label, ListItem, CheckBox, Body } from 'native-base';
+import { 
+    Container, 
+    Text, 
+    Header, 
+    Left, 
+    Title, 
+    Content, 
+    Right, 
+    Form, 
+    Item, 
+    Input, 
+    Label, 
+    ListItem, 
+    CheckBox, 
+    Body,
+    Button
+} from 'native-base';
 import logo from '../assets/easescan.png'
 
 export default class SignIn extends Component {
@@ -43,6 +59,12 @@ export default class SignIn extends Component {
                         </ListItem>
                     </View>
                 </Content>
+                <Button>
+                    <Text>Skip</Text>
+                </Button>
+                <Button style={styles.blueBtn}>
+                    <Text>Submit</Text>
+                </Button>
             </Container>
         )
     }
@@ -65,5 +87,8 @@ const styles = StyleSheet.create({
     },
     form: {
         margin: 10
+    },
+    blueBtn:{
+        backgroundColor: "#1DBAB4"
     }
 })
