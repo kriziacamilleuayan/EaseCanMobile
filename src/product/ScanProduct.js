@@ -3,6 +3,8 @@ import { View, StyleSheet, Dimensions, Image } from 'react-native'
 import { Container, Text } from 'native-base';
 import LinearGradient from 'react-native-linear-gradient';
 import {Actions} from 'react-native-router-flux';
+import logo from "../assets/easescan.png";
+
 
 export default class ScanProduct extends Component{
     render(){
